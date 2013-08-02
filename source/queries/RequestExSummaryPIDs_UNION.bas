@@ -1,0 +1,16 @@
+﻿dbMemo "SQL" ="SELECT Request.[ProjectID]\015\012FROM Request\015\012UNION SELECT [ExecutiveSum"
+    "maries].[ProjectID]\015\012FROM [ExecutiveSummaries]\015\012Where ((Request.[Pro"
+    "jectID] is Not Null) AND ([ExecutiveSummaries].[ProjectID] is not null));\015\012"
+dbMemo "Connect" =""
+dbBoolean "ReturnsRecords" ="-1"
+dbInteger "ODBCTimeout" ="60"
+dbBoolean "OrderByOn" ="0"
+dbByte "Orientation" ="0"
+dbByte "DefaultView" ="2"
+dbBoolean "FilterOnLoad" ="0"
+dbBoolean "OrderByOnLoad" ="-1"
+dbByte "PublishToWeb" ="1"
+        dbText "Name" ="Request.[ProjectID]"
+        dbLong "AggregateType" ="-1"
+    End
+End

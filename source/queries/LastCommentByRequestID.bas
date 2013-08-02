@@ -1,0 +1,28 @@
+﻿dbMemo "SQL" ="SELECT Max([Comments]![DateTime]) AS LastComment, Comments.RequestID, Max([Comme"
+    "nts]![CommentID]) AS MaxOfCommentID\015\012FROM Comments\015\012GROUP BY Comment"
+    "s.RequestID;\015\012"
+dbMemo "Connect" =""
+dbBoolean "ReturnsRecords" ="-1"
+dbInteger "ODBCTimeout" ="60"
+dbBoolean "OrderByOn" ="0"
+dbByte "Orientation" ="0"
+dbByte "DefaultView" ="2"
+dbBoolean "FilterOnLoad" ="0"
+dbBoolean "OrderByOnLoad" ="-1"
+dbByte "PublishToWeb" ="1"
+dbByte "RecordsetType" ="0"
+dbBoolean "TotalsRow" ="0"
+        dbText "Name" ="LastComment"
+        dbInteger "ColumnWidth" ="2250"
+        dbBoolean "ColumnHidden" ="0"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="Comments.RequestID"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="MaxOfCommentID"
+        dbInteger "ColumnWidth" ="1890"
+        dbBoolean "ColumnHidden" ="0"
+        dbLong "AggregateType" ="-1"
+    End
+End

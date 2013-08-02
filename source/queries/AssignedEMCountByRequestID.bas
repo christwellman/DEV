@@ -1,0 +1,17 @@
+﻿dbMemo "SQL" ="SELECT Count([RequestIDbyAssignment]![AssignmentID]) AS [EM Assigned?]\015\012FR"
+    "OM RequestIDbyAssignment\015\012HAVING (((Count(RequestIDbyAssignment!Assignment"
+    "ID))=1) And ((RequestIDbyAssignment.RequestID)=Forms!ProjectDetails!RequestID) A"
+    "nd ((RequestIDbyAssignment.AssignmentConfimred)=True));\015\012"
+dbMemo "Connect" =""
+dbBoolean "ReturnsRecords" ="-1"
+dbInteger "ODBCTimeout" ="60"
+dbBoolean "OrderByOn" ="0"
+dbByte "Orientation" ="0"
+dbByte "DefaultView" ="2"
+dbBoolean "FilterOnLoad" ="0"
+dbBoolean "OrderByOnLoad" ="-1"
+dbByte "PublishToWeb" ="1"
+        dbText "Name" ="EM Assigned?"
+        dbLong "AggregateType" ="-1"
+    End
+End
