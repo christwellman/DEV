@@ -228,14 +228,14 @@ End
     Expression ="IIf((41757>=Assignments.StartDate) And (41757<=Assignments.Enddate),Assignments."
         "UtilizationPercent,Null)"
 End
-    LeftTable ="Contacts"
-    RightTable ="Assignments"
-    Expression ="Contacts.ContactID = Assignments.ContactID"
-    Flag =1
     LeftTable ="Request"
     RightTable ="Assignments"
     Expression ="Request.RequestID = Assignments.RequestID"
-    Flag =1
+    Flag =3
+    LeftTable ="Contacts"
+    RightTable ="Assignments"
+    Expression ="Contacts.ContactID = Assignments.ContactID"
+    Flag =3
 End
 dbBoolean "ReturnsRecords" ="-1"
 dbInteger "ODBCTimeout" ="60"
@@ -494,12 +494,12 @@ End
     State =0
     Left =0
     Top =0
-    Right =1438
+    Right =909
     Bottom =823
     Left =-1
     Top =-1
-    Right =1100
-    Bottom =219
+    Right =894
+    Bottom =203
     Left =0
     Top =0
     ColumnsShown =539
