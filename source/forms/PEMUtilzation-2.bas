@@ -15,7 +15,7 @@ PublishOption =1
     Right =24690
     Bottom =12345
     DatasheetGridlinesColor =16316664
-    Filter ="[ContactID] =  919"
+    Filter ="[ContactID] =  606"
         0xcc0344396e42e440
     End
     RecordSource ="PEMUtilzation"
@@ -451,6 +451,7 @@ PublishOption =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
+                    FontUnderline = NotDefault
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
@@ -458,28 +459,132 @@ PublishOption =1
                     Top =1980
                     Width =3975
                     Height =585
+                    ColumnOrder =3
                     TabIndex =3
                     LeftMargin =44
                     TopMargin =22
                     RightMargin =44
                     BottomMargin =22
                     BorderColor =10921638
-                    ForeColor =4210752
+                    ForeColor =6250335
                     Name ="ProjectID"
                     ControlSource ="ProjectID"
                     GroupTable =1
                     BottomPadding =150
                     GridlineColor =10921638
+                        Version =196611
+                        ColumnsShown =0
+                            Action ="OnError"
+                            Argument ="1"
+                            Argument ="ErrorHandler"
+                        End
+                            Condition ="[Form].[Dirty]"
+                            Action ="RunCommand"
+                            Argument ="97"
+                        End
+                            Action ="SetLocalVar"
+                            Argument ="__*L0_"
+                            Argument ="IsNull([RequestID])"
+                        End
+                            Action ="SetLocalVar"
+                            Argument ="__*L0C_"
+                            Argument ="[LocalVars]![__*L0_]"
+                        End
+                            Condition ="[LocalVars]![__*L0C_]"
+                            Action ="OpenForm"
+                            Comment ="Open the form to a new record doesn't have a RequestID/ is Null"
+                            Argument ="ProjectDetails"
+                            Argument ="0"
+                            Argument =""
+                            Argument =""
+                            Argument ="0"
+                            Argument ="3"
+                        End
+                            Action ="SetLocalVar"
+                            Argument ="__*L0C_"
+                            Argument ="(Not [LocalVars]![__*L0_])"
+                        End
+                            Condition ="[LocalVars]![__*L0C_]"
+                            Action ="SetTempVar"
+                            Comment ="Use a TempVar to pass a filte rto teh OpenForm Action"
+                            Argument ="ProjectDetails_ID"
+                            Argument ="[RequestID]"
+                        End
+                            Condition ="..."
+                            Action ="OpenForm"
+                            Argument ="ProjectDetails"
+                            Argument ="0"
+                            Argument =""
+                            Argument ="[RequestID]=[TempVars]![ProjectDetails_ID]"
+                            Argument ="1"
+                            Argument ="3"
+                        End
+                            Condition ="..."
+                            Action ="RemoveTempVar"
+                            Argument ="ProjectDetails_ID"
+                        End
+                            Condition ="..."
+                            Action ="RefreshRecord"
+                        End
+                            Action ="SetLocalVar"
+                            Argument ="__*L0C_"
+                            Argument ="False"
+                        End
+                            MacroName ="ErrorHandler"
+                            Action ="MsgBox"
+                            Argument ="=[MacroError].[Description]"
+                            Argument ="-1"
+                            Argument ="0"
+                        End
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"ProjectID\" Event=\"OnClick\" xmlns=\"http://schemas.microso"
+                                "ft.com/office/accessservices/2009/11/application\" xmlns:a=\"http://schemas.micr"
+                                "osoft.com/office/accessservices/"
+                        End
+                            Comment ="_AXL:2009/11/forms\"><Statements><Action Name=\"OnError\"><Argument Name=\"Goto\""
+                                ">Macro Name</Argument><Argument Name=\"MacroName\">ErrorHandler</Argument></Acti"
+                                "on><ConditionalBlock><If><Condition>[Form].[Dirty]</Condition><Statements><Actio"
+                                "n Name=\"SaveRecord\""
+                        End
+                            Comment ="_AXL:/></Statements></If></ConditionalBlock><ConditionalBlock><If><Condition>IsN"
+                                "ull([RequestID])</Condition><Statements><Comment>Open the form to a new record d"
+                                "oesn't have a RequestID/ is Null</Comment><Action Name=\"OpenForm\"><Argument Na"
+                                "me=\"FormName\">P"
+                        End
+                            Comment ="_AXL:rojectDetails</Argument><Argument Name=\"DataMode\">Add</Argument><Argument"
+                                " Name=\"WindowMode\">Dialog</Argument></Action></Statements></If><Else><Statemen"
+                                "ts><Comment>Use a TempVar to pass a filte rto teh OpenForm Action</Comment><Acti"
+                                "on Name=\"SetTempV"
+                        End
+                            Comment ="_AXL:ar\"><Argument Name=\"Name\">ProjectDetails_ID</Argument><Argument Name=\"E"
+                                "xpression\">[RequestID]</Argument></Action><Action Name=\"OpenForm\"><Argument N"
+                                "ame=\"FormName\">ProjectDetails</Argument><Argument Name=\"WhereCondition\">[Req"
+                                "uestID]=[TempVars]![Proj"
+                        End
+                            Comment ="_AXL:ectDetails_ID]</Argument><Argument Name=\"DataMode\">Edit</Argument><Argume"
+                                "nt Name=\"WindowMode\">Dialog</Argument></Action><Action Name=\"RemoveTempVar\">"
+                                "<Argument Name=\"Name\">ProjectDetails_ID</Argument></Action><Action Name=\"Refr"
+                                "eshRecord\"/></Statemen"
+                        End
+                            Comment ="_AXL:ts></Else></ConditionalBlock></Statements><Sub Name=\"ErrorHandler\"><State"
+                                "ments><Action Collapsed=\"true\" Name=\"MessageBox\"><Argument Name=\"Message\">"
+                                "=[MacroError].[Description]</Argument></Action></Statements></Sub></UserInterfac"
+                                "eMacro>"
+                        End
+                    End
 
                     LayoutCachedLeft =2265
                     LayoutCachedTop =1980
                     LayoutCachedWidth =6240
                     LayoutCachedHeight =2565
+                    DisplayAsHyperlink =1
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
+                    ForeThemeColorIndex =10
+                    ForeTint =100.0
                     GroupTable =1
                             OverlapFlags =85
                             TextAlign =1
@@ -494,7 +599,7 @@ PublishOption =1
                             BorderColor =8355711
                             ForeColor =8355711
                             Name ="Label0"
-                            Caption ="ProjectID"
+                            Caption ="PID"
                             GroupTable =1
                             BottomPadding =150
                             GridlineColor =10921638
@@ -510,6 +615,7 @@ PublishOption =1
                     End
                 End
                     Visible = NotDefault
+                    ColumnHidden = NotDefault
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
@@ -517,6 +623,7 @@ PublishOption =1
                     Top =360
                     Width =3975
                     Height =360
+                    ColumnOrder =0
                     LeftMargin =44
                     TopMargin =22
                     RightMargin =44
@@ -565,6 +672,7 @@ PublishOption =1
                     End
                 End
                     Visible = NotDefault
+                    ColumnHidden = NotDefault
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
@@ -572,6 +680,7 @@ PublishOption =1
                     Top =900
                     Width =3975
                     Height =360
+                    ColumnOrder =1
                     TabIndex =1
                     LeftMargin =44
                     TopMargin =22
@@ -631,6 +740,7 @@ PublishOption =1
                     Top =4365
                     Width =3975
                     Height =360
+                    ColumnOrder =7
                     TabIndex =7
                     LeftMargin =44
                     TopMargin =22
@@ -668,7 +778,7 @@ PublishOption =1
                             BorderColor =8355711
                             ForeColor =8355711
                             Name ="Label18"
-                            Caption ="StartDate"
+                            Caption ="Start Date"
                             GroupTable =1
                             BottomPadding =150
                             GridlineColor =10921638
@@ -690,6 +800,7 @@ PublishOption =1
                     Top =4905
                     Width =3975
                     Height =360
+                    ColumnOrder =8
                     TabIndex =8
                     LeftMargin =44
                     TopMargin =22
@@ -727,7 +838,7 @@ PublishOption =1
                             BorderColor =8355711
                             ForeColor =8355711
                             Name ="Label21"
-                            Caption ="Enddate"
+                            Caption ="End date"
                             GroupTable =1
                             BottomPadding =150
                             GridlineColor =10921638
@@ -749,6 +860,7 @@ PublishOption =1
                     Top =5445
                     Width =3975
                     Height =360
+                    ColumnOrder =9
                     TabIndex =10
                     LeftMargin =44
                     TopMargin =22
@@ -786,7 +898,7 @@ PublishOption =1
                             BorderColor =8355711
                             ForeColor =8355711
                             Name ="Label24"
-                            Caption ="UtilizationPercent"
+                            Caption ="%"
                             GroupTable =1
                             BottomPadding =150
                             GridlineColor =10921638
@@ -802,6 +914,7 @@ PublishOption =1
                     End
                 End
                     Visible = NotDefault
+                    ColumnHidden = NotDefault
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
@@ -809,6 +922,7 @@ PublishOption =1
                     Top =1440
                     Width =3975
                     Height =360
+                    ColumnOrder =2
                     TabIndex =2
                     LeftMargin =44
                     TopMargin =22
@@ -2639,10 +2753,11 @@ PublishOption =1
                     Top =2745
                     Width =3975
                     Height =360
+                    ColumnWidth =2175
+                    ColumnOrder =6
                     TabIndex =6
                     BorderColor =10921638
                     ForeColor =4210752
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"486\""
                     Name ="ContactID"
                     ControlSource ="ContactID"
                     RowSourceType ="Table/Query"
@@ -2685,7 +2800,7 @@ PublishOption =1
                             BorderColor =8355711
                             ForeColor =8355711
                             Name ="Label9"
-                            Caption ="ContactID"
+                            Caption ="Assigned PM:"
                             GroupTable =1
                             BottomPadding =150
                             GridlineColor =10921638
@@ -2708,10 +2823,11 @@ PublishOption =1
                     Top =3285
                     Width =3975
                     Height =359
+                    ColumnWidth =3630
+                    ColumnOrder =4
                     TabIndex =4
                     BorderColor =10921638
                     ForeColor =4210752
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
                     Name ="CustomerID"
                     ControlSource ="CustomerID"
                     RowSourceType ="Table/Query"
@@ -2754,7 +2870,7 @@ PublishOption =1
                             BorderColor =8355711
                             ForeColor =8355711
                             Name ="Label12"
-                            Caption ="CustomerID"
+                            Caption ="Customer"
                             GroupTable =1
                             BottomPadding =150
                             GridlineColor =10921638
@@ -2777,10 +2893,11 @@ PublishOption =1
                     Top =3825
                     Width =3975
                     Height =359
+                    ColumnWidth =3705
+                    ColumnOrder =5
                     TabIndex =5
                     BorderColor =10921638
                     ForeColor =4210752
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
                     Name ="ServiceID"
                     ControlSource ="ServiceID"
                     RowSourceType ="Table/Query"
@@ -2822,7 +2939,7 @@ PublishOption =1
                             BorderColor =8355711
                             ForeColor =8355711
                             Name ="Label15"
-                            Caption ="ServiceID"
+                            Caption ="Service"
                             GroupTable =1
                             BottomPadding =150
                             GridlineColor =10921638
@@ -2845,10 +2962,11 @@ PublishOption =1
                     Top =5985
                     Width =3975
                     Height =359
+                    ColumnWidth =2205
+                    ColumnOrder =10
                     TabIndex =9
                     BorderColor =10921638
                     ForeColor =4210752
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="StatusID"
                     ControlSource ="StatusID"
                     RowSourceType ="Table/Query"
@@ -2892,7 +3010,7 @@ PublishOption =1
                             BorderColor =8355711
                             ForeColor =8355711
                             Name ="Label27"
-                            Caption ="StatusID"
+                            Caption ="Status"
                             GroupTable =1
                             BottomPadding =150
                             GridlineColor =10921638
