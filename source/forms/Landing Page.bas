@@ -13,8 +13,8 @@ PublishOption =1
     Width =12705
     DatasheetFontHeight =11
     ItemSuffix =97
-    Right =18330
-    Bottom =10860
+    Right =18090
+    Bottom =12105
     DatasheetGridlinesColor =16316664
         0x002bfc20b42fe440
     End
@@ -161,6 +161,7 @@ PublishOption =1
                     ForeTint =100.0
                     GroupTable =1
                 End
+                    BackStyle =1
                     OverlapFlags =85
                     TextAlign =1
                     Left =300
@@ -168,8 +169,9 @@ PublishOption =1
                     Width =5400
                     Height =315
                     FontSize =10
+                    BackColor =2366701
                     Name ="Label47"
-                    Caption ="Front End Build: 7-16-2013"
+                    Caption ="DEV Build: 7-16-2013"
                     GroupTable =1
                     GridlineColor =10921638
                     LayoutCachedLeft =300
@@ -179,6 +181,7 @@ PublishOption =1
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1
+                    BackThemeColorIndex =-1
                     BorderThemeColorIndex =2
                     BorderTint =100.0
                     ForeThemeColorIndex =2
