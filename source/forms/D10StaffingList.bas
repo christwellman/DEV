@@ -17,14 +17,14 @@ PublishOption =1
     RowHeight =285
     DatasheetFontHeight =10
     ItemSuffix =951
-    Right =19995
+    Right =24690
     Bottom =12345
     SubdatasheetHeight =7200
     DatasheetGridlinesColor =-1
     Tag ="SplitList"
-    Filter ="((([Request].[RequestTypeID]=1 Or [Request].[RequestTypeID]=5))) AND (([Staffing"
-        "Pipeline].[StatusID]= 110) OR ([StaffingPipeline].[StatusID]= 200) OR ([Staffing"
-        "Pipeline].[StatusID]= 230))"
+    Filter ="((([Request].[RequestTypeID]=1 Or [Request].[RequestTypeID]=5))) AND ([Lookup_St"
+        "atus].[DCPM Project Status] Not In (\"Cancelled\",\"Cold\",\"Duplicate Request\""
+        ") Or [Lookup_Status].[DCPM Project Status] IS Null)"
     OrderBy ="[StaffingPipeline].[RequestDate], [StaffingPipeline].[ProjectStartDate]"
     Picture ="office.png"
         0xe2320b8b7036e440

@@ -13,8 +13,8 @@ PublishOption =1
     Width =17108
     DatasheetFontHeight =11
     ItemSuffix =258
-    Right =19755
-    Bottom =12105
+    Right =16080
+    Bottom =13425
     DatasheetGridlinesColor =16316664
         0xd8c2a3062f2fe440
     End

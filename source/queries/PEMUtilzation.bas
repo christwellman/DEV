@@ -1,7 +1,8 @@
 ﻿Operation =1
 Option =0
-Where ="(((Contacts.Manager)=497 Or (Contacts.Manager)=451 Or (Contacts.Manager)=619 Or "
-    "(Contacts.Manager)=646 Or (Contacts.Manager)=623))"
+Where ="((((Request.StatusID)=115 Or (Request.StatusID)>=200)) AND ((Contacts.Manager)=4"
+    "97 Or (Contacts.Manager)=451 Or (Contacts.Manager)=619 Or (Contacts.Manager)=646"
+    " Or (Contacts.Manager)=623))"
     Name ="Contacts"
     Name ="Request"
     Name ="Assignments"
@@ -494,12 +495,12 @@ End
     State =0
     Left =0
     Top =0
-    Right =909
+    Right =1388
     Bottom =823
     Left =-1
     Top =-1
-    Right =894
-    Bottom =203
+    Right =1073
+    Bottom =59
     Left =0
     Top =0
     ColumnsShown =539

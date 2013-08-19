@@ -36,6 +36,27 @@ dbBoolean "FilterOnLoad" ="0"
 dbBoolean "OrderByOnLoad" ="-1"
 dbBoolean "TotalsRow" ="0"
 dbByte "PublishToWeb" ="1"
+        dbText "Name" ="ExecutiveSummaries.[ShortProjectName]"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="ExecutiveSummaries.[ChallengesOpenIssues]"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="ExecutiveSummaries.ShortProjectName"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="ExecutiveSummaries.ProjectStatus"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="ExecutiveSummaries.ChallengesOpenIssues"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="Count"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="ExecutiveSummaries.ProjectHealth"
+        dbLong "AggregateType" ="-1"
+    End
         dbText "Name" ="NewExecutiveSummaries.[Short Project Name]"
         dbInteger "ColumnWidth" ="2610"
         dbBoolean "ColumnHidden" ="0"
@@ -52,36 +73,15 @@ dbByte "PublishToWeb" ="1"
         dbText "Name" ="NewExecutiveSummaries.[Project Health]"
         dbLong "AggregateType" ="-1"
     End
-        dbText "Name" ="Count"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="ExecutiveSummaries.[ShortProjectName]"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="ExecutiveSummaries.[ChallengesOpenIssues]"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="ExecutiveSummaries.ShortProjectName"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="ExecutiveSummaries.ProjectStatus"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="ExecutiveSummaries.ChallengesOpenIssues"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="ExecutiveSummaries.ProjectHealth"
-        dbLong "AggregateType" ="-1"
-    End
 End
     State =0
     Left =0
     Top =0
-    Right =1333
-    Bottom =823
+    Right =1388
+    Bottom =911
     Left =-1
     Top =-1
-    Right =995
+    Right =1073
     Bottom =-1
     Left =0
     Top =0

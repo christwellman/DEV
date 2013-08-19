@@ -36,33 +36,6 @@ dbBoolean "TotalsRow" ="0"
         dbText "Name" ="WeeklyKPITable.CurrentQuarter"
         dbLong "AggregateType" ="-1"
     End
-        dbText "Name" ="WeeklyKPIID"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="ReportDate"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="TotalProjects"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="AtRiskProjects"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="OnHoldProjectCount"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="CompleteProjectCount"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="PEMCFU"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="ADJPEMCFU"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="DCCCFU"
-        dbLong "AggregateType" ="-1"
-    End
         dbText "Name" ="WeeklyKPITable.OnHoldProjectCount"
         dbLong "AggregateType" ="-1"
     End
@@ -90,16 +63,43 @@ dbBoolean "TotalsRow" ="0"
         dbText "Name" ="WeeklyKPITable.CompleteProjectCount"
         dbLong "AggregateType" ="-1"
     End
+        dbText "Name" ="WeeklyKPIID"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="ReportDate"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="TotalProjects"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="AtRiskProjects"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="OnHoldProjectCount"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="CompleteProjectCount"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="PEMCFU"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="ADJPEMCFU"
+        dbLong "AggregateType" ="-1"
+    End
+        dbText "Name" ="DCCCFU"
+        dbLong "AggregateType" ="-1"
+    End
 End
     State =0
     Left =0
     Top =0
-    Right =1333
-    Bottom =823
+    Right =1388
+    Bottom =911
     Left =-1
     Top =-1
-    Right =995
-    Bottom =548
+    Right =1073
+    Bottom =532
     Left =0
     Top =0
     ColumnsShown =539

@@ -36,21 +36,7 @@ dbBoolean "TotalsRow" ="0"
         dbInteger "ColumnWidth" ="1785"
         dbBoolean "ColumnHidden" ="0"
     End
-        dbText "Name" ="Expr2"
-        dbLong "AggregateType" ="-1"
-    End
         dbText "Name" ="[_OverBudgetProjectsFromExSummaries].ShortProjectName"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="[_OverBudgetProjectsFromExSummaries].[Short Project Name]"
-        dbInteger "ColumnWidth" ="3705"
-        dbBoolean "ColumnHidden" ="0"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="[_OverBudgetProjectsFromExSummaries].DollarsOverBudget"
-        dbLong "AggregateType" ="-1"
-    End
-        dbText "Name" ="Expr1"
         dbLong "AggregateType" ="-1"
     End
         dbText "Name" ="Dollars Over Budget"
