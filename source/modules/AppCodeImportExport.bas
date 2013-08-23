@@ -209,7 +209,7 @@ Private Function CloseFormsReports()
     Exit Function
 
 ErrorHandler:
-    Debug.Print "AppCodeImportExport.CloseFormsReports: Error #" & Err.Number & vbCrLf & Err.description
+    Debug.Print "AppCodeImportExport.CloseFormsReports: Error #" & Err.Number & vbCrLf & Err.Description
 End Function
 
 ' Pad a string on the right to make it `count` characters long.

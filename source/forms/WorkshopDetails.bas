@@ -15,12 +15,12 @@ PublishOption =1
     Cycle =1
     GridX =24
     GridY =24
-    Width =12300
+    Width =12630
     DatasheetFontHeight =11
-    ItemSuffix =551
-    Left =5205
+    ItemSuffix =572
+    Left =4380
     Top =2415
-    Right =20115
+    Right =20460
     Bottom =14520
     SubdatasheetHeight =7200
     DatasheetGridlinesColor =-1
@@ -1477,7 +1477,7 @@ PublishOption =1
                     Width =12030
                     Height =4725
                     FontSize =10
-                    TabIndex =10
+                    TabIndex =14
                     Name ="tabIssues"
                     FontName ="Tahoma"
 
@@ -1622,6 +1622,41 @@ PublishOption =1
                                     LayoutCachedTop =3840
                                     LayoutCachedWidth =12060
                                     LayoutCachedHeight =7920
+                                End
+                            End
+                        End
+                            OverlapFlags =215
+                            Left =300
+                            Top =3840
+                            Width =11760
+                            Height =4140
+                            BorderColor =10921638
+                            Name ="Return Information"
+                            EventProcPrefix ="Return_Information"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =300
+                            LayoutCachedTop =3840
+                            LayoutCachedWidth =12060
+                            LayoutCachedHeight =7980
+                            WebImagePaddingLeft =2
+                            WebImagePaddingTop =2
+                            WebImagePaddingRight =2
+                            WebImagePaddingBottom =2
+                                    OverlapFlags =247
+                                    Left =300
+                                    Top =3840
+                                    Width =11460
+                                    Height =3840
+                                    Name ="Return subform"
+                                    SourceObject ="Form.Return subform"
+                                    LinkChildFields ="RequestID"
+                                    LinkMasterFields ="RequestID"
+                                    EventProcPrefix ="Return_subform"
+
+                                    LayoutCachedLeft =300
+                                    LayoutCachedTop =3840
+                                    LayoutCachedWidth =11760
+                                    LayoutCachedHeight =7680
                                 End
                             End
                         End
@@ -1786,7 +1821,7 @@ PublishOption =1
                     Width =3000
                     Height =315
                     FontSize =10
-                    TabIndex =4
+                    TabIndex =5
                     Name ="Opened Date"
                     ControlSource ="RequestDate"
                     Format ="Medium Date"
@@ -1843,7 +1878,7 @@ PublishOption =1
                     Width =1065
                     Height =315
                     FontSize =10
-                    TabIndex =7
+                    TabIndex =8
                     Name ="Start Date"
                     ControlSource ="ProjectStartDate"
                     Format ="Medium Date"
@@ -1851,6 +1886,43 @@ PublishOption =1
                     EventProcPrefix ="Start_Date"
                     BottomPadding =150
                     GridlineColor =10921638
+                        Version =196611
+                        ColumnsShown =0
+                            Action ="MsgBox"
+                            Argument ="Date Changed - Update Assignments?"
+                            Argument ="-1"
+                            Argument ="0"
+                        End
+                            Action ="SetTempVar"
+                            Argument ="OldStartDate"
+                            Argument ="[RequestIDbyAssignment].[Form]![StartDate]"
+                        End
+                            Action ="MsgBox"
+                            Argument ="=[OldStartDate]"
+                            Argument ="-1"
+                            Argument ="0"
+                        End
+                            Action ="RemoveTempVar"
+                            Argument ="OldStartDate"
+                        End
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"Start Date\" Event=\"AfterUpdate\" xmlns=\"http://schemas.mi"
+                                "crosoft.com/office/accessservices/2009/11/application\" xmlns:a=\"http://schemas"
+                                ".microsoft.com/office/accessserv"
+                        End
+                            Comment ="_AXL:ices/2009/11/forms\"><Statements><Action Name=\"MessageBox\"><Argument Name"
+                                "=\"Message\">Date Changed - Update Assignments?</Argument></Action><Action Name="
+                                "\"SetTempVar\"><Argument Name=\"Name\">OldStartDate</Argument><Argument Name=\"E"
+                                "xpression\">[RequestIDby"
+                        End
+                            Comment ="_AXL:Assignment].[Form]![StartDate]</Argument></Action><Action Name=\"MessageBox"
+                                "\"><Argument Name=\"Message\">=[OldStartDate]</Argument></Action><Action Name=\""
+                                "RemoveTempVar\"><Argument Name=\"Name\">OldStartDate</Argument></Action></Statem"
+                                "ents></UserInterfaceM"
+                        End
+                            Comment ="_AXL:acro>"
+                        End
+                    End
 
                     LayoutCachedLeft =6480
                     LayoutCachedTop =2190
@@ -1958,7 +2030,7 @@ PublishOption =1
                     Width =1080
                     Height =315
                     FontSize =10
-                    TabIndex =8
+                    TabIndex =9
                     Name ="End Date"
                     ControlSource ="EndDate"
                     Format ="Medium Date"
@@ -2044,7 +2116,7 @@ PublishOption =1
                     Width =3000
                     Height =315
                     FontSize =10
-                    TabIndex =5
+                    TabIndex =6
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"486\""
                     Name ="DeskOWner"
                     ControlSource ="DeskOwnerID"
@@ -2166,10 +2238,10 @@ PublishOption =1
                     IMESentenceMode =3
                     Left =6480
                     Top =2580
-                    Width =3120
-                    Height =315
+                    Width =3180
+                    Height =300
                     FontSize =10
-                    TabIndex =9
+                    TabIndex =12
                     Name ="Location"
                     ControlSource ="Location"
                     Format ="Medium Date"
@@ -2181,8 +2253,8 @@ PublishOption =1
 
                     LayoutCachedLeft =6480
                     LayoutCachedTop =2580
-                    LayoutCachedWidth =9600
-                    LayoutCachedHeight =2895
+                    LayoutCachedWidth =9660
+                    LayoutCachedHeight =2880
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =4
@@ -2195,7 +2267,7 @@ PublishOption =1
                             Left =5400
                             Top =2580
                             Width =1020
-                            Height =315
+                            Height =300
                             FontSize =10
                             BackColor =-2147483613
                             Name ="LocationLabel"
@@ -2208,7 +2280,7 @@ PublishOption =1
                             LayoutCachedLeft =5400
                             LayoutCachedTop =2580
                             LayoutCachedWidth =6420
-                            LayoutCachedHeight =2895
+                            LayoutCachedHeight =2880
                             LayoutGroup =4
                             GridlineThemeColorIndex =1
                             GridlineShade =65.0
@@ -2226,7 +2298,7 @@ PublishOption =1
                     Width =3000
                     Height =315
                     FontSize =10
-                    TabIndex =6
+                    TabIndex =7
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
                     Name ="Combo300"
                     ControlSource ="RequestTypeID"
@@ -2342,6 +2414,7 @@ PublishOption =1
                     OldBorderStyle =0
                     OverlapFlags =247
                     TextFontCharSet =0
+                    TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
                     Left =10860
@@ -2349,7 +2422,7 @@ PublishOption =1
                     Width =1080
                     Height =315
                     FontSize =10
-                    TabIndex =11
+                    TabIndex =10
                     BackColor =-2147483613
                     ForeColor =-2147483615
                     Name ="Project Scheduled Finish Date"
@@ -2363,6 +2436,7 @@ PublishOption =1
                     LayoutCachedWidth =11940
                     LayoutCachedHeight =2505
                             OverlapFlags =247
+                            TextAlign =1
                             TextFontFamily =34
                             Left =9720
                             Top =2220
@@ -2385,7 +2459,7 @@ PublishOption =1
                     Top =810
                     Width =5460
                     Height =1260
-                    TabIndex =13
+                    TabIndex =4
                     Name ="Services"
                     SourceObject ="Form.Services"
                     LinkChildFields ="RequestID"
@@ -2426,7 +2500,7 @@ PublishOption =1
                     Top =2760
                     Width =3000
                     Height =315
-                    TabIndex =12
+                    TabIndex =13
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="StatusID"
                     ControlSource ="StatusID"
@@ -2462,6 +2536,62 @@ PublishOption =1
                             LayoutCachedHeight =3075
                             GridlineThemeColorIndex =1
                             GridlineShade =65.0
+                        End
+                    End
+                End
+                    RowSourceTypeInt =1
+                    OverlapFlags =247
+                    TextFontCharSet =0
+                    IMESentenceMode =3
+                    Left =10920
+                    Top =2580
+                    Width =1020
+                    Height =300
+                    FontSize =10
+                    TabIndex =11
+                    Name ="Geo"
+                    ControlSource ="Geo"
+                    RowSourceType ="Value List"
+                    RowSource ="AMERICAS;APJC;EMEAR"
+                    StatusBarText ="Geography"
+                    DefaultValue ="\"AMERICAS\""
+                    FontName ="Tahoma"
+                    GroupTable =20
+                    BottomPadding =150
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =10920
+                    LayoutCachedTop =2580
+                    LayoutCachedWidth =11940
+                    LayoutCachedHeight =2880
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =4
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =20
+                            OverlapFlags =247
+                            TextAlign =3
+                            TextFontFamily =34
+                            Left =9720
+                            Top =2580
+                            Width =1140
+                            Height =300
+                            FontSize =10
+                            BackColor =-2147483613
+                            Name ="Label555"
+                            Caption ="Geo:"
+                            FontName ="Tahoma"
+                            GroupTable =20
+                            BottomPadding =150
+                            LayoutCachedLeft =9720
+                            LayoutCachedTop =2580
+                            LayoutCachedWidth =10860
+                            LayoutCachedHeight =2880
+                            ColumnStart =2
+                            ColumnEnd =2
+                            LayoutGroup =4
+                            GroupTable =20
                         End
                     End
                 End

@@ -12,8 +12,8 @@ PublishOption =1
     GridY =24
     Width =12705
     DatasheetFontHeight =11
-    ItemSuffix =97
-    Right =19950
+    ItemSuffix =105
+    Right =16080
     Bottom =12105
     DatasheetGridlinesColor =16316664
         0x002bfc20b42fe440
@@ -170,7 +170,7 @@ PublishOption =1
                     FontSize =10
                     BackColor =2366701
                     Name ="Label47"
-                    Caption ="FE Build: 8-16-2013"
+                    Caption ="FE Build: 8-23-2013"
                     GroupTable =1
                     GridlineColor =10921638
                     LayoutCachedLeft =300
@@ -198,14 +198,14 @@ PublishOption =1
                     OverlapFlags =85
                     TextFontFamily =18
                     Left =180
-                    Width =8775
+                    Width =8715
                     Height =5835
                     Name ="TabCtl0"
                     FontName ="Cambria"
                     GridlineColor =10921638
 
                     LayoutCachedLeft =180
-                    LayoutCachedWidth =8955
+                    LayoutCachedWidth =8895
                     LayoutCachedHeight =5835
                     BackColor =14277081
                     BorderColor =6710886
@@ -215,7 +215,7 @@ PublishOption =1
                             OverlapFlags =87
                             Left =255
                             Top =465
-                            Width =8618
+                            Width =8566
                             Height =5295
                             BorderColor =10921638
                             Name ="Project Staffing"
@@ -223,7 +223,7 @@ PublishOption =1
                             GridlineColor =10921638
                             LayoutCachedLeft =255
                             LayoutCachedTop =465
-                            LayoutCachedWidth =8873
+                            LayoutCachedWidth =8821
                             LayoutCachedHeight =5760
                             WebImagePaddingLeft =2
                             WebImagePaddingTop =2
@@ -573,7 +573,7 @@ PublishOption =1
                                     LayoutCachedWidth =8640
                                     LayoutCachedHeight =5490
                                     PictureCaptionArrangement =5
-                                    LayoutGroup =6
+                                    LayoutGroup =5
                                     ForeTint =100.0
                                     BackColor =0
                                     BackThemeColorIndex =0
@@ -602,14 +602,14 @@ PublishOption =1
                             OverlapFlags =247
                             Left =255
                             Top =465
-                            Width =8625
+                            Width =8565
                             Height =5295
                             BorderColor =10921638
                             Name ="Reporting"
                             GridlineColor =10921638
                             LayoutCachedLeft =255
                             LayoutCachedTop =465
-                            LayoutCachedWidth =8880
+                            LayoutCachedWidth =8820
                             LayoutCachedHeight =5760
                             WebImagePaddingLeft =2
                             WebImagePaddingTop =2
@@ -1269,14 +1269,14 @@ PublishOption =1
                             OverlapFlags =247
                             Left =255
                             Top =465
-                            Width =8625
+                            Width =8565
                             Height =5295
                             BorderColor =10921638
                             Name ="Optimization"
                             GridlineColor =10921638
                             LayoutCachedLeft =255
                             LayoutCachedTop =465
-                            LayoutCachedWidth =8880
+                            LayoutCachedWidth =8820
                             LayoutCachedHeight =5760
                             WebImagePaddingLeft =2
                             WebImagePaddingTop =2
@@ -1409,7 +1409,7 @@ PublishOption =1
                             OverlapFlags =247
                             Left =255
                             Top =465
-                            Width =8625
+                            Width =8565
                             Height =5295
                             BorderColor =10921638
                             Name ="CloudWorkshop"
@@ -1417,23 +1417,21 @@ PublishOption =1
                             GridlineColor =10921638
                             LayoutCachedLeft =255
                             LayoutCachedTop =465
-                            LayoutCachedWidth =8880
+                            LayoutCachedWidth =8820
                             LayoutCachedHeight =5760
                             WebImagePaddingLeft =2
                             WebImagePaddingTop =2
                             WebImagePaddingRight =2
                             WebImagePaddingBottom =2
                                     OverlapFlags =247
-                                    Left =330
-                                    Top =765
+                                    Left =450
+                                    Top =660
                                     Width =4440
                                     Height =390
                                     ForeColor =4210752
                                     Name ="CloudWorkshopPipelineButton"
                                     Caption ="Cloud Workshop Pipeline"
-                                    GroupTable =7
-                                    RightPadding =45
-                                    BottomPadding =45
+                                    GroupTable =10
                                     GridlineColor =10921638
                                         Version =196611
                                         ColumnsShown =0
@@ -1456,11 +1454,11 @@ PublishOption =1
                                         End
                                     End
 
-                                    LayoutCachedLeft =330
-                                    LayoutCachedTop =765
-                                    LayoutCachedWidth =4770
-                                    LayoutCachedHeight =1155
-                                    LayoutGroup =5
+                                    LayoutCachedLeft =450
+                                    LayoutCachedTop =660
+                                    LayoutCachedWidth =4890
+                                    LayoutCachedHeight =1050
+                                    LayoutGroup =6
                                     Gradient =0
                                     BackColor =14013909
                                     BackThemeColorIndex =6
@@ -1476,11 +1474,126 @@ PublishOption =1
                                     PressedShade =100.0
                                     HoverForeColor =4210752
                                     PressedForeColor =4210752
-                                    GroupTable =7
+                                    GroupTable =10
                                     WebImagePaddingLeft =2
                                     WebImagePaddingTop =2
-                                    WebImagePaddingRight =2
-                                    WebImagePaddingBottom =2
+                                    WebImagePaddingRight =1
+                                    WebImagePaddingBottom =1
+                                End
+                                    OverlapFlags =247
+                                    AccessKey =78
+                                    Left =4950
+                                    Top =660
+                                    Width =3030
+                                    Height =390
+                                    ForeColor =4210752
+                                    Name ="cmdNewRequest"
+                                    Caption ="&New Request"
+                                    Tag ="NewItemPopup~FormName=Issue Details~SourceID=ID"
+                                    UnicodeAccessKey =78
+                                    GroupTable =10
+                                    GridlineColor =10921638
+                                        Version =196611
+                                        ColumnsShown =0
+                                            Action ="OpenForm"
+                                            Argument ="WorkshopDetails"
+                                            Argument ="0"
+                                            Argument =""
+                                            Argument ="1=0"
+                                            Argument ="-1"
+                                            Argument ="3"
+                                        End
+                                            Action ="OnError"
+                                            Argument ="0"
+                                        End
+                                            Action ="Requery"
+                                        End
+                                            Action ="SearchForRecord"
+                                            Argument ="-1"
+                                            Argument =""
+                                            Argument ="2"
+                                            Argument ="=\"[RequestID]=\" & Nz(DMax(\"[RequestID]\",[Form].[RecordSource]),0)"
+                                        End
+                                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                                "nterfaceMacro For=\"cmdNewRequest\" Event=\"OnClick\" xmlns=\"http://schemas.mic"
+                                                "rosoft.com/office/accessservices/2009/11/application\" xmlns:a=\"http://schemas."
+                                                "microsoft.com/office/accessservi"
+                                        End
+                                            Comment ="_AXL:ces/2009/11/forms\"><Statements><Action Name=\"OpenForm\"><Argument Name=\""
+                                                "FormName\">WorkshopDetails</Argument><Argument Name=\"WhereCondition\">1=0</Argu"
+                                                "ment><Argument Name=\"WindowMode\">Dialog</Argument></Action><Action Name=\"OnEr"
+                                                "ror\"/><Action Name=\"Req"
+                                        End
+                                            Comment ="_AXL:uery\"/><Action Name=\"SearchForRecord\"><Argument Name=\"WhereCondition\">"
+                                                "=\"[RequestID]=\" &amp; Nz(DMax(\"[RequestID]\",[Form].[RecordSource]),0)</Argum"
+                                                "ent></Action></Statements></UserInterfaceMacro>"
+                                        End
+                                    End
+                                        0x424d360400000000000036000000280000001000000010000000010020000000 ,
+                                        0x0000000400000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x00000000000000000000000000000000000000000000b69a86ff20120aff2012 ,
+                                        0x0aff20120aff20120aff20120aff20120aff20120aff20120aff20120aff2012 ,
+                                        0x0aff20120aff20120aff000000000000000000000000b89d8bfffcfaf6fffbf7 ,
+                                        0xeffffaf1e8fff9ece2fff7e8dbfff5e4d6fff3e0d3fff0ded1ffeedccfffebdb ,
+                                        0xceffe9d9ccff23160eff000000000000000000000000baa08ffffcfdf9ffd278 ,
+                                        0x49ffce7447ffcb7243ffc56e41ffc06a3dffbc663dffb8693effba6e47ff9f5d ,
+                                        0x3efff0e0d6ff41352fff000000000000000000000000bba493fffcfefcffd378 ,
+                                        0x49fff6b798fff3b190fff2a986fff09f78ffef986fffef9971fff2a885ffc299 ,
+                                        0x84fff8efe9ff958f8bff000000000000000000000000bda697fffcfefcffd479 ,
+                                        0x4affd27748ffce7546ffc97143ffc46d41ffc27248ffcd8f6fff74b6c7ff8cd9 ,
+                                        0xedff90ecffff39bfe5ff9ef0ffff9fe8f9ff94d7ecffbda899fffcfefcfffcfe ,
+                                        0xfcfffcfefcfffcfdf9fffcfbf6fffdf8f2fffcf7f0fffef7f2ffacebfaff31b7 ,
+                                        0xdfff7de9fdff5dc6e6ff93f0ffff2fb6dfff9fe8f9ffbda899ffbda899ffbca7 ,
+                                        0x97ffbba393ffb9a08fffb99d8bffb89b87ffbda290ffd3c1b5ff9beaf8ff93f1 ,
+                                        0xffffbff8ffffafe8f4ffc7fbffff93f1ffff9ef0ffff00000000000000000000 ,
+                                        0x00000000000000000000000000000000000000000000000000001faad9fb53bf ,
+                                        0xe1ffafe8f4fff0fffdffb4ebf6ff53bfe1ff36bbe5ff00000000000000000000 ,
+                                        0x00000000000000000000000000000000000000000000000000007aeaffb896f3 ,
+                                        0xffffc7fbffffade5f3ffc3fbffff96f3ffff90dbe6ff00000000000000000000 ,
+                                        0x00000000000000000000000000000000000000000000000000004fd9fa7a31b8 ,
+                                        0xe0fe8cf1ffff58c2e3ff90f1ffff2eb6dffe49d2f48500000000000000000000 ,
+                                        0x000000000000000000000000000000000000000000000000000028afdaa542cb ,
+                                        0xf0947aeaffb823aedbfb70e8ffbb4ad4f58428afda7e00000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x00000000000000000000000000000000000000000000
+                                    End
+
+                                    CursorOnHover =1
+                                    LayoutCachedLeft =4950
+                                    LayoutCachedTop =660
+                                    LayoutCachedWidth =7980
+                                    LayoutCachedHeight =1050
+                                    PictureCaptionArrangement =1
+                                    ColumnStart =1
+                                    ColumnEnd =1
+                                    LayoutGroup =6
+                                    Gradient =0
+                                    BackColor =14013909
+                                    BackThemeColorIndex =6
+                                    BackTint =40.0
+                                    BorderColor =9868950
+                                    BorderThemeColorIndex =6
+                                    BorderTint =100.0
+                                    HoverColor =14013909
+                                    HoverThemeColorIndex =6
+                                    PressedColor =14013909
+                                    PressedThemeColorIndex =6
+                                    PressedTint =40.0
+                                    PressedShade =100.0
+                                    HoverForeColor =4210752
+                                    PressedForeColor =4210752
+                                    GroupTable =10
+                                    WebImagePaddingLeft =2
+                                    WebImagePaddingTop =2
+                                    WebImagePaddingRight =1
+                                    WebImagePaddingBottom =1
                                 End
                             End
                         End

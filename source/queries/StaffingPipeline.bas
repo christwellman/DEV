@@ -61,6 +61,7 @@ End
     Alias ="ReamainingHours"
     Expression ="[As Approved Budgeted Hours]-[Total hours]"
     Expression ="CleanGPPRData.LastUpdate"
+    Expression ="Request.Geo"
 End
     LeftTable ="CleanGPPRData"
     RightTable ="Request"
@@ -250,16 +251,19 @@ dbByte "PublishToWeb" ="1"
         dbText "Name" ="CleanGPPRData.LastUpdate"
         dbLong "AggregateType" ="-1"
     End
+        dbText "Name" ="Request.Geo"
+        dbLong "AggregateType" ="-1"
+    End
 End
     State =0
     Left =0
     Top =0
-    Right =1010
+    Right =1388
     Bottom =823
     Left =-1
     Top =-1
-    Right =995
-    Bottom =570
+    Right =1073
+    Bottom =554
     Left =0
     Top =0
     ColumnsShown =539
