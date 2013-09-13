@@ -14,10 +14,8 @@ PublishOption =1
     Width =12128
     DatasheetFontHeight =11
     ItemSuffix =42
-    Left =645
-    Top =5835
-    Right =12030
-    Bottom =9540
+    Right =16080
+    Bottom =12105
     DatasheetGridlinesColor =16316664
         0x534a09e62d37e440
     End
@@ -451,7 +449,7 @@ PublishOption =1
                     Width =9825
                     Height =360
                     ColumnWidth =1305
-                    ColumnOrder =3
+                    ColumnOrder =4
                     TabIndex =3
                     LeftMargin =44
                     TopMargin =22
@@ -513,7 +511,7 @@ PublishOption =1
                     Width =9825
                     Height =360
                     ColumnWidth =1500
-                    ColumnOrder =4
+                    ColumnOrder =5
                     TabIndex =4
                     LeftMargin =44
                     TopMargin =22
@@ -576,7 +574,7 @@ PublishOption =1
                     Width =9825
                     Height =360
                     ColumnWidth =675
-                    ColumnOrder =5
+                    ColumnOrder =6
                     TabIndex =6
                     LeftMargin =44
                     TopMargin =22
@@ -590,8 +588,9 @@ PublishOption =1
                     StatusBarText ="Approximate Utilzation Percentage for PM for duration of project"
                     ValidationRule ="Is Null Or Between 0 And 100"
                     ValidationText ="Please enter a valid percentage 1- 100"
-                    DefaultValue ="=([Forms]![ProjectDetails]![PMHours]/([Forms]![ProjectDetails]![SAHours]+[Forms]"
-                        "![ProjectDetails]![PMHours]))*100"
+                    DefaultValue ="=IIf((IsNull([AssignedRoleID]) Or [AssignedRoleID]=1),[Forms]![ProjectDetails].["
+                        "PMHours],[Forms]![ProjectDetails].[SAHours])/(Round(([Forms]![ProjectDetails]![E"
+                        "nd Date]-[Forms]![ProjectDetails]![Start Date])/7,0)*40)*100"
                     GroupTable =1
                     BottomPadding =150
                     GridlineColor =10921638
@@ -643,7 +642,7 @@ PublishOption =1
                     Width =9825
                     Height =360
                     ColumnWidth =3705
-                    ColumnOrder =6
+                    ColumnOrder =3
                     TabIndex =7
                     BorderColor =10921638
                     ForeColor =4210752
@@ -654,11 +653,41 @@ PublishOption =1
                     RowSource ="SELECT Roles.RoleID, Roles.LongRoleName FROM Roles ORDER BY Roles.RoleID; "
                     ColumnWidths ="0;1440"
                     StatusBarText ="Link to Roles Table"
+                    DefaultValue ="1"
                     BaseInfo ="\"SELECT Roles.RoleID, Roles.LongRoleName FROM Roles ORDER BY Roles.RoleID; \";\""
                         "Roles\";\"\";\"RoleID\";\"LongRoleName\";\"PrimaryKey\""
                     GroupTable =1
                     BottomPadding =150
                     GridlineColor =10921638
+                        Version =196611
+                        ColumnsShown =4
+                            Condition ="[AssignedRoleID]<>1"
+                            Action ="SetValue"
+                            Argument ="[UtilizationPercent]"
+                            Argument ="=[Forms]![ProjectDetails].[SAHours]/(Round(([Forms]![ProjectDetails]![End Date]-"
+                                "[Forms]![ProjectDetails]![Start Date])/7,0)*40)*100"
+                        End
+                            Action ="RunCommand"
+                            Argument ="18"
+                        End
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"AssignedRoleID\" Event=\"AfterUpdate\" xmlns=\"http://schema"
+                                "s.microsoft.com/office/accessservices/2009/11/application\" xmlns:a=\"http://sch"
+                                "emas.microsoft.com/office/access"
+                        End
+                            Comment ="_AXL:services/2009/11/forms\"><Statements><ConditionalBlock><If><Condition>[Assi"
+                                "gnedRoleID]&lt;&gt;1</Condition><Statements><Action Name=\"SetValue\"><Argument "
+                                "Name=\"Item\">[UtilizationPercent]</Argument><Argument Name=\"Expression\">=[For"
+                                "ms]![ProjectDetails]"
+                        End
+                            Comment ="_AXL:.[SAHours]/(Round(([Forms]![ProjectDetails]![End Date]-[Forms]![ProjectDeta"
+                                "ils]![Start Date])/7,0)*40)*100</Argument></Action></Statements></If></Condition"
+                                "alBlock><Action Name=\"RunMenuCommand\"><Argument Name=\"Command\">Refresh</Argu"
+                                "ment></Action></S"
+                        End
+                            Comment ="_AXL:tatements></UserInterfaceMacro>"
+                        End
+                    End
                     LeftMargin =44
                     TopMargin =22
                     RightMargin =44
@@ -730,6 +759,56 @@ PublishOption =1
                     GroupTable =1
                     BottomPadding =150
                     GridlineColor =10921638
+                        Version =196611
+                        ColumnsShown =4
+                            Condition ="[ContactID]=612"
+                            Action ="SetValue"
+                            Argument ="[AssignedRoleID]"
+                            Argument ="1"
+                        End
+                            Condition ="..."
+                            Action ="SetValue"
+                            Argument ="[UtilizationPercent]"
+                            Argument ="0"
+                        End
+                            Condition ="..."
+                            Action ="SetValue"
+                            Argument ="[Forms]![ProjectDetails].[PMHours]"
+                            Argument ="0"
+                        End
+                            Condition ="..."
+                            Action ="SetValue"
+                            Argument ="[AssignmentConfimred]"
+                            Argument ="-1"
+                        End
+                            Condition ="..."
+                            Action ="SetValue"
+                            Argument ="[DateAssigned]"
+                            Argument ="=Now()"
+                        End
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"ContactID\" Event=\"AfterUpdate\" xmlns=\"http://schemas.mic"
+                                "rosoft.com/office/accessservices/2009/11/application\" xmlns:a=\"http://schemas."
+                                "microsoft.com/office/accessservi"
+                        End
+                            Comment ="_AXL:ces/2009/11/forms\"><Statements><ConditionalBlock><If><Condition>[ContactID"
+                                "]=612</Condition><Statements><Action Name=\"SetValue\"><Argument Name=\"Item\">["
+                                "AssignedRoleID]</Argument><Argument Name=\"Expression\">1</Argument></Action><Ac"
+                                "tion Name=\"SetValue\""
+                        End
+                            Comment ="_AXL:><Argument Name=\"Item\">[UtilizationPercent]</Argument><Argument Name=\"Ex"
+                                "pression\">0</Argument></Action><Action Name=\"SetValue\"><Argument Name=\"Item\""
+                                ">[Forms]![ProjectDetails].[PMHours]</Argument><Argument Name=\"Expression\">0</A"
+                                "rgument></Action><Acti"
+                        End
+                            Comment ="_AXL:on Name=\"SetValue\"><Argument Name=\"Item\">[AssignmentConfimred]</Argumen"
+                                "t><Argument Name=\"Expression\">-1</Argument></Action><Action Name=\"SetValue\">"
+                                "<Argument Name=\"Item\">[DateAssigned]</Argument><Argument Name=\"Expression\">="
+                                "Now()</Argument></Action>"
+                        End
+                            Comment ="_AXL:</Statements></If></ConditionalBlock></Statements></UserInterfaceMacro>"
+                        End
+                    End
                     ListItemsEditForm ="ContactDetails"
                     LeftMargin =44
                     TopMargin =22

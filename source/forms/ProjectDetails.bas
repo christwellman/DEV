@@ -18,9 +18,9 @@ PublishOption =1
     Width =12300
     DatasheetFontHeight =11
     ItemSuffix =570
-    Left =510
+    Left =4380
     Top =2415
-    Right =12810
+    Right =16680
     Bottom =12300
     SubdatasheetHeight =7200
     DatasheetGridlinesColor =-1
@@ -1698,6 +1698,18 @@ PublishOption =1
                                     TabIndex =4
                                     Name ="Check543"
                                     ControlSource ="ReadyForStaffing"
+                                    ValidationText ="Please provide approximate project start, end dates, PM and SA hour information "
+                                        "prior to marking project as ready to staff."
+                                        Version =196611
+                                        ColumnsShown =0
+                                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                                "nterfaceMacro For=\"Check543\" Event=\"BeforeUpdate\" xmlns=\"http://schemas.mic"
+                                                "rosoft.com/office/accessservices/2009/11/application\" xmlns:a=\"http://schemas."
+                                                "microsoft.com/office/accessservi"
+                                        End
+                                            Comment ="_AXL:ces/2009/11/forms\"><Statements/></UserInterfaceMacro>"
+                                        End
+                                    End
                                         Version =196611
                                         ColumnsShown =4
                                             Action ="SetLocalVar"
