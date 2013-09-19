@@ -4,6 +4,8 @@ PublishOption =1
     RecordSelectors = NotDefault
     AutoCenter = NotDefault
     DividingLines = NotDefault
+    FilterOn = NotDefault
+    OrderByOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =5
     ScrollBars =0
@@ -20,9 +22,9 @@ PublishOption =1
     SubdatasheetHeight =7200
     DatasheetGridlinesColor =-1
     Tag ="SplitList"
-    Filter ="((([Request].[RequestTypeID]=1 Or [Request].[RequestTypeID]=5) AND ([StaffingPip"
-        "eline].[StatusID]=110 Or [StaffingPipeline].[StatusID]=200 Or [StaffingPipeline]"
-        ".[StatusID]=230))) AND ([StaffingPipeline].[Geo]=\"AMERICAS\")"
+    Filter ="(((Request.RequestTypeID=1 Or Request.RequestTypeID=5) And (StaffingPipeline.Sta"
+        "tusID=110 Or StaffingPipeline.StatusID=200 Or StaffingPipeline.StatusID=230))) A"
+        "nd (StaffingPipeline.Geo=\"AMERICAS\")"
     OrderBy ="[StaffingPipeline].[RequestDate], [StaffingPipeline].[ProjectStartDate]"
     Picture ="office.png"
         0xe2320b8b7036e440

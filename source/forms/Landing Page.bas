@@ -12,9 +12,9 @@ PublishOption =1
     GridY =24
     Width =12705
     DatasheetFontHeight =11
-    ItemSuffix =105
-    Right =16080
-    Bottom =12105
+    ItemSuffix =106
+    Right =24690
+    Bottom =12345
     DatasheetGridlinesColor =16316664
         0x002bfc20b42fe440
     End
@@ -170,7 +170,7 @@ PublishOption =1
                     FontSize =10
                     BackColor =2366701
                     Name ="Label47"
-                    Caption ="FE Build: 8-26-2013"
+                    Caption ="FE Build: 9-18-2013"
                     GroupTable =1
                     GridlineColor =10921638
                     LayoutCachedLeft =300
@@ -1135,7 +1135,7 @@ PublishOption =1
                                     QuickStyle =33
                                     QuickStyleMask =-53
                                 End
-                                    OverlapFlags =247
+                                    OverlapFlags =255
                                     Left =480
                                     Top =3810
                                     Width =4785
@@ -1263,6 +1263,102 @@ PublishOption =1
                                     ColumnEnd =1
                                     LayoutGroup =2
                                     GroupTable =2
+                                End
+                                    OverlapFlags =247
+                                    Left =480
+                                    Top =4215
+                                    Width =4785
+                                    Height =330
+                                    ForeColor =16777215
+                                    Name ="Command105"
+                                    Caption ="Active Projects with Rev <$500k"
+                                    ControlTipText ="Report to File"
+                                    GroupTable =11
+                                    LeftPadding =90
+                                    RightPadding =105
+                                    BottomPadding =165
+                                    GridlineColor =10921638
+                                        Version =196611
+                                        ColumnsShown =0
+                                            Action ="OpenQuery"
+                                            Argument ="Shahirs Query"
+                                            Argument ="0"
+                                            Argument ="1"
+                                        End
+                                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                                "nterfaceMacro For=\"Command105\" Event=\"OnClick\" xmlns=\"http://schemas.micros"
+                                                "oft.com/office/accessservices/2009/11/application\" xmlns:a=\"http://schemas.mic"
+                                                "rosoft.com/office/accessservices"
+                                        End
+                                            Comment ="_AXL:/2009/11/forms\"><Statements><Action Name=\"OpenQuery\"><Argument Name=\"Qu"
+                                                "eryName\">Shahirs Query</Argument></Action></Statements></UserInterfaceMacro>"
+                                        End
+                                    End
+                                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                                        0x0000000000000000308030ff308030ff307830ff307830ff307020ff307020ff ,
+                                        0x307020ff306810ff306810ff306010ff306010ff306010ff306000ff305800ff ,
+                                        0x305800ff305800ff308040ffffffffffffffffffffffffffffffffffffffffff ,
+                                        0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ,
+                                        0xffffffff305800ff308840ffffffffffd0e8d0ffd0e8d0ffd0e8d0ffc0e8c0ff ,
+                                        0xc0e8c0ffc0e0b0ffb0e0b0ffb0e0b0ffb0e0a0ffa0e0a0ffa0e0a0ffa0e0a0ff ,
+                                        0xffffffff305800ff308840ffffffffffd0e8d0ff70c090ff20a060ff209860ff ,
+                                        0x209040ff208020ff509040fff0f8f0ff70c080ff40a860ff60b070fffff8ffff ,
+                                        0xfff8f0ff305800ff309040ffffffffffd0e8d0ffd0e8d0ff309850ff209040ff ,
+                                        0x208030ff307820ff709850ff90d8b0ff40b870ff40b060ffc0e0c0fffff8ffff ,
+                                        0xffffffff306000ff309050ffffffffffd0e8d0ffd0e8d0ffa0d0b0ff307820ff ,
+                                        0x307810ff407810ffd0f0e0ff40c080ff40c080ff80d0a0fffffffffff0f8f0ff ,
+                                        0xffffffff306010ff309050ffffffffffd0e8d0ffd0e8d0ffd0e8d0ff70a050ff ,
+                                        0x306000ff306000ff50c890ff40c890ff60c890fff0f8f0ffffffffffb0e0b0ff ,
+                                        0xffffffff306010ff309050ffffffffffd0e8d0ffd0e8d0ffd0e8d0ffd0e8d0ff ,
+                                        0x406820ff40a060ff40d0a0ff40d090ffb0e8d0ffffffffffd0f0d0ffb0e0b0ff ,
+                                        0xffffffff306810ff409850ffffffffffd0e8d0ffd0e8d0ffd0e8d0ffd0e8d0ff ,
+                                        0x80c090ff40c890ff40d090ff50b070fffffffffffff8ffffb0e0b0ffc0e0b0ff ,
+                                        0xffffffff306810ff409850ffffffffffd0e8d0ffd0e8d0ffd0e8d0ffd0e8d0ff ,
+                                        0x50c080ff40c080ff40c080ff406830ffa0a890fffff8f0fff0f8f0ffc0e8c0ff ,
+                                        0xffffffff306820ff409850f0ffffffffe0f0e0ffd0e8d0ffd0e8d0ff80c890ff ,
+                                        0x40b870ff40b880ff508850ff506030ff506830ffe0e8e0fffff8f0ffe0f0e0ff ,
+                                        0xffffffff307020ff409850d0f0f8f0fff0f8f0ffd0e8d0ffb0d8b0ff40a860ff ,
+                                        0x40b060ff80c8a0ffd0e0d0ff506830ff506830ff607850fffff8f0fffff8f0ff ,
+                                        0xffffffff307020ff40985090c0e0d0fff0f8f0ffd0e8d0ff409840ff40a050ff ,
+                                        0x40a860fff0f8f0fffff8ffff80a070ff506830ff506830ff909880fffff8f0ff ,
+                                        0xfff8ffff307820ff4098505060b080f0f0f8f0fff0f8f0fff0f8f0ffe0f0e0ff ,
+                                        0xd0e8d0ffd0e8d0ffd0e8d0ffd0e8d0ffd0e8d0ffd0e8d0ffd0e8d0ffd0e8d0ff ,
+                                        0xffffffff307830ff000000004098505060b080f0c0e0d0fff0f8f0ffffffffff ,
+                                        0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ,
+                                        0xffffffff307830ff00000000000000004098505040985090409850d0409850f0 ,
+                                        0x409850ff409050ff309050ff309050ff309040ff308840ff308840ff308840ff ,
+                                        0x308030ff308030ff
+                                    End
+
+                                    LayoutCachedLeft =480
+                                    LayoutCachedTop =4215
+                                    LayoutCachedWidth =5265
+                                    LayoutCachedHeight =4545
+                                    PictureCaptionArrangement =5
+                                    LayoutGroup =7
+                                    ForeThemeColorIndex =1
+                                    ForeTint =100.0
+                                    Gradient =0
+                                    BackColor =10319446
+                                    BackThemeColorIndex =-1
+                                    BackTint =100.0
+                                    BorderColor =8421504
+                                    BorderThemeColorIndex =7
+                                    BorderTint =100.0
+                                    HoverColor =10319446
+                                    HoverThemeColorIndex =-1
+                                    HoverTint =100.0
+                                    PressedColor =10319446
+                                    PressedThemeColorIndex =-1
+                                    PressedShade =100.0
+                                    HoverForeThemeColorIndex =1
+                                    HoverForeTint =100.0
+                                    PressedForeThemeColorIndex =1
+                                    PressedForeTint =100.0
+                                    GroupTable =11
+                                    Shadow =2
+                                    QuickStyle =33
+                                    QuickStyleMask =-53
                                 End
                             End
                         End
